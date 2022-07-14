@@ -1,0 +1,54 @@
+/* First, update the variables in the :root as needed */
+:root{
+  --bs-primary: #C78C06;
+  --bs-primary-rgb: 199, 140, 6;
+  --bs-secondary: #FFE6AC;
+  --bs-secondary-rgb: 255, 230, 172;
+}
+/* Second, select the element and update the specific variable */
+.btn-primary{
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+}
+/* Third, update the property directly */
+.btn-primary{
+  border-color: var(--bs-primary);
+}
+
+/* ----------------------------------------
+        Three Star Media Demo Styles
+---------------------------------------- */
+.banner{
+  background: var(--bs-dark) url(../images/main-banner.jpg) no-repeat center center;
+  background-size: cover;
+}
+.vision{
+  background: var(--bs-dark) url(../images/vision.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-color: var(--bs-dark);
+  --bs-btn-hover-bg: var(--bs-primary);
+  --bs-btn-hover-border-color: var(--bs-primary);
+  --bs-btn-active-color: var(--bs-dark);
+  --bs-btn-active-bg: var(--bs-primary);
+  --bs-btn-active-border-color: var(--bs-primary);
+  --bs-btn-disabled-color: var(--bs-dark);
+}
+.navbar-nav .nav-link.active{
+  background-color: var(--bs-primary);
+  color: var(--bs-dark);
+  padding: 1rem;
+}
+.navbar-nav .nav-link{
+  color: var(--bs-primary);
+}
+.navbar-nav{
+  display: flex;
+}
+.nav-item{
+  flex: 1;
+}
